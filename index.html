@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">GenriAiichiro</a>
+
+      <nav>
+        <a href="#" class="active"> Home</a>
+        <a href="#">Services</a>
+        <a href="#">Skills</a>
+        <a href="#">Education</a>
+        <a href="#">Experience</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-img">
+        <img src="pp.png" alt="" />
+      </div>
+      <div class="home-content">
+        <h1>Hi, It's <span>Genri</span></h1>
+        <h3 class="typing-text">I'm a <span class="span-input"></span></h3>
+        <p>
+          I'm Genri, a passionate web developer and gamer. I have a strong
+          interest in building innovative and interactive web applications. With
+          a solid foundation in HTML, CSS, and JavaScript, I'm always looking to
+          improve my skills and stay up-to-date with the latest trends in web
+          development.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.tiktok.com/@brahma0803"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a href="https://github.com/BrahmaYatmika"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/brahmayatmika/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <a href="#" class="btn">Hire me</a>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!-- auto typing -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed(".span-input", {
+    strings: ["Web Developer💻", "Gamer🎮"],
+    typeSpeed: 180,
+    backSpeed: 60,
+    loop: true,
+  });
+
+  let docTitle = document.title;
+  window.addEventListener("blur", () => {
+    document.title = "Come Back Mother F*cker🖕";
+  });
+  window.addEventListener("focus", () => {
+    document.title = docTitle;
+  });
+</script>
+<!-- end auto typing -->
